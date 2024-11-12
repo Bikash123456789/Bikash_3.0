@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admissions - Music Academy</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header class="header">
+        <div class="navbar">
+            <h1 class="logo">Music Academy</h1>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="faculty.html">Faculty</a></li>
+                    <li><a href="admissions.html">Admissions</a></li>
+                    <li><a href="lessons.html">Lessons</a></li>
+                    <li><a href="notice-board.html">Notice Board</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <section class="admissions">
+        <h2>Admissions</h2>
+        <p>We are currently accepting new students for the upcoming term. Join our academy to learn from expert faculty and improve your musical skills. To apply, please fill out the application form below:</p>
+        <form action="submit-admission" method="POST">
+            <label for="name">Full Name:</label>
+            <input type="text" id="name" name="name" required>
+
+            <label for="instrument">Choose Your Instrument:</label>
+            <select id="instrument" name="instrument">
+                <option value="vocals">Vocals</option>
+                <option value="guitar">Guitar</option>
+                <option value="piano">Piano</option>
+                <option value="drums">Drums</option>
+            </select>
+
+            <button type="submit">Submit Application</button>
+        </form>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 Music Academy, Morigaon, Assam</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
